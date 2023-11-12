@@ -1,13 +1,54 @@
+@use "../../assets/variables";
+
 .header {
+  width: 1180px;
+  height: 100px;
+  background: variables.$accent;
   padding: 1rem 5rem 0;
+  border-bottom-left-radius: 20px;
+  float: right;
   &__wrapper{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  &__title {
-    font-size: 48px;
-    margin-bottom: -5px;
+  &__input {
+    width: 850px;
+    height: 60px;
+    background-color: variables.$main-bg;
+    border-radius: variables.$rounded;
+    margin-right: 10px;
+    padding-left: 20px;
+    color: variables.$accent;
+    font-size: variables.$second-text;
+    font-weight: variables.$font-regular;
+    &::placeholder {
+      color: variables.$accent;
+    }
+    &::-webkit-input-placeholder {
+      color: variables.$accent;
+    }
+    &::-moz-placeholder{
+      color: variables.$accent;
+    }
   }
-  &__subtitle {
-    font-size: 16px;
+  &__select {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: variables.$main-bg;
+    border-radius: variables.$rounded;
+  }
+  &__add {
+    width: 128px;
+    height: 60px;
+    background-color: variables.$main-bg;
+    border-radius: variables.$rounded;
+    color: variables.$accent;
+    font-weight: variables.$font-medium;
+    font-size: variables.$second-text;
   }
 }

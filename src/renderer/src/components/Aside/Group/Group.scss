@@ -1,0 +1,22 @@
+@use "../../../assets/variables";
+
+.group {
+  width: 222px;
+  height: 60px;
+  background: variables.$main-bg;
+  margin-bottom: 15px;
+  border-radius: variables.$rounded;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+  }
+  &__icon {
+    margin-right: 5px;
+  }
+  &__title {
+    color: variables.$accent;
+    font-size: variables.$second-text;
+    font-weight: variables.$font-medium;
+  }
+}

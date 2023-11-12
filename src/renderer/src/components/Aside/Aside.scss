@@ -1,0 +1,21 @@
+@use "../../assets/variables";
+
+.aside {
+  width: 312px;
+  height: 100vh;
+  background: variables.$accent;
+  border-top-right-radius: variables.$rounded;
+  border-bottom-right-radius: variables.$rounded;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__logo {
+    color: variables.$main-bg;
+    font-size: variables.$main-text;
+    font-weight: variables.$font-semi-bold;
+    margin-top: 10px;
+    margin-bottom: variables.$main-text;
+  }
+}
